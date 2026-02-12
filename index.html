@@ -236,7 +236,16 @@
             align-items: center;
             gap: 20px;
         }
-
+        
+       .celebration-img {
+           width: 100%;
+           max-width: 350px;
+           height: auto;
+           object-fit: contain;
+           display: block;
+           margin: 0 auto 20px;
+           border-radius: 10px;
+       }
         #noBtn {
             background: #4a4a4a;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -316,8 +325,7 @@
     <!-- Screen 5: Celebration -->
     <div class="container" id="screen-celebration">
         <h1>Vera vali ila da mavane 😂💖</h1>
-        <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" alt="Celebration"
-            style="width: 100%; border-radius: 10px; margin-bottom: 20px;">
+       <img class="celebration-img" src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" alt="Celebration">
         <p>I lovesss youuuu!</p>
     </div>
 
@@ -333,7 +341,7 @@
         const YOUR_EMAIL = "demo@gmail.com";
 
         // ACTION: Customize your love letter here
-        const loveLetterText = "Hi Mamss!,\n\nOnline la kooda love letter anupuven paathiya hahaha .Sorry for all the fights and thank you for taking care of me.\n\nI love you sooooo muchhh,I'll leave you no matter what nu msg la anupurathu ellam real life la face panrapo dhaa theridhu jokes on us :))\n\nSo, I guess I have no other way now maatikiten 😂 I lovee you da mama, will you be my valentine?💙";
+        const loveLetterText = "Hi Mamss!,\n\nOnline la kooda love letter anupuven paathiya hahaha .Sorry for all the fights and thank you for taking care of me.\n\nI love you sooooo muchhh,I'll leave you no matter what nu msg la anupurathu ellam real life la face panrapo dhaa theridhu jokes on us :))\n\nSo, I guess I have no other way now maatikiten 😂 I lovee you da mama💙";
         /* --------------------- */
 
         // Particle System
@@ -496,6 +504,7 @@
 
 
 </html>
+
 
 
 
