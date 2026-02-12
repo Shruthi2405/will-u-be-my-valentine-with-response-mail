@@ -430,13 +430,14 @@
             ];
 
             // Move button
-            const x = Math.random() * (window.innerWidth - 200);
-            const y = Math.random() * (window.innerHeight - 100);
-
+            const btnWidth = btn.offsetWidth;
+            const btnHeight = btn.offsetHeight;
+            const padding = 20;
+            const x = Math.random() * (window.innerWidth - btnWidth - padding * 2) + padding;
+            const y = Math.random() * (window.innerHeight - btnHeight - padding * 2) + padding;
             btn.style.position = 'fixed';
             btn.style.left = x + 'px';
             btn.style.top = y + 'px';
-
             // Change text
             btn.innerText = phrases[dodgeCount % phrases.length];
             dodgeCount++;
@@ -504,6 +505,7 @@
 
 
 </html>
+
 
 
 
